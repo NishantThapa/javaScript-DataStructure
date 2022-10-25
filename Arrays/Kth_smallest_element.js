@@ -7,3 +7,4 @@ const kthSmallest = (ary, k) => {
 }
 
 console.log(kthSmallest(ary, k));
+// output 5
