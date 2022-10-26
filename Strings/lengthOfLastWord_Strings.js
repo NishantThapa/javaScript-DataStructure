@@ -10,3 +10,12 @@ var lengthOfLastWord = function (s) {
 
 lengthOfLastWord("   fly me   to   the moon  ");
 // output 4
+
+// option 2   ================>>>>>>>>>>>>>>>
+
+var lengthOfLastWord = function (s) {
+  let words = s.trim().split(" ");
+  return words[words.length - 1].length;
+};
+lengthOfLastWord("   fly me   to   the moon  ");
+// output 2
