@@ -1,3 +1,5 @@
+// last in first out 
+
 const Stack = (data = [], max) => {
   return {
     push: (item) => {
@@ -19,5 +21,5 @@ const StackOne = Stack([], 5);
 
 StackOne.push(1);
 StackOne.push(3);
-console.log(StackOne.print()); // [1,2]
+console.log(StackOne.print()); // [1,3]
 console.log(StackOne.length()); // 2
