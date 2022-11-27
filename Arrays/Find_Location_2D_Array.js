@@ -6,9 +6,10 @@ function check(g, v, find) {
   let gs = [[...g], [...v]];
   let pos = [0, 0];
   gs.some((res, indexX) => {
-    res.some((y, indexY) => {
+    return res.some((y, indexY) => {
       if (y === find) {
         pos = [indexX, indexY];
+        return true;
       }
     });
   });
@@ -16,4 +17,3 @@ function check(g, v, find) {
 }
 
 console.log(check(g, v, find));
-// output [1,1]
